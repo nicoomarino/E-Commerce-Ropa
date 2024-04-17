@@ -119,6 +119,109 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   margin-right: 20px;
 }
 
+/*payment modal*/
+
+.payment-modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 1000;
+  background: #ECECEC ;
+  transition: .6s;
+}
+
+.payment-modal.payment{
+ display: block;
+}
+
+.payment-main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+
+/*side style payment*/
+.payment-main-container input{
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 400px;
+  border:none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.payment-main-container input:hover{
+  border:1px solid #6DACFF ;
+}
+
+.payment-section{
+  padding: 15px;
+  width: 400px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border:none;
+  outline: none;
+  cursor: pointer;
+}
+
+.payment-section:hover{
+ border:1px solid #6DACFF
+}
+.payment-title{
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.p-button-container button{
+  padding: 10px;
+  width: 200px;
+  border:none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  background: #2A2C2E ;
+  color: #fff;
+
+}
+
+.p-button-container button:hover{
+  transition: .6s;
+  background: #202122;
+}
+
+.payment-main-container svg{
+  fill: #FF2525 ;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 250px;
+  height: 50px;
+  width: 50px;
+}
+
+.top-payment-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+.payment-main-container svg:hover{
+  transition: .6s;
+ background: #FF5B5B;
+}
+
+
 /*search bar functionality*/
 
 .search-bar-container{
